@@ -9,9 +9,6 @@
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1><a href="#">SurfCamp Xperience</a></h1>
-            </div>
             <nav>
                 <ul>
                     <li class="current"><a href="#">Inicio</a></li>
@@ -23,29 +20,40 @@
         </div>
     </header>
 
-    <section class="showcase">
+    <main class="showcase">
         <div class="container">
             <h1>Vive la aventura del surf chileno</h1>
             <p>Descubre los mejores viajes de surf y vive una experiencia inolvidable</p>
+            <form class="subscribe-form" action="/suscripcion" method="post">
+                <label for="email">Enterate de nuestras próximas aventuras:</label>
+                <input type="email" id="email" name="email" placeholder="Tu e-mail" required>
+                <button type="submit">Suscribirme</button>
+            </form>
         </div>
-    </section>
+    </main>
 
     <section class="boxes">
         <div class="container">
             <div class="box">
-                <img src="https://www.everydaycalifornia.com/cdn/shop/articles/unnamed_499a8ed5-2f9b-483d-87ae-7fb97f78774c.jpg?v=1664907847&width=1200" alt="Tabla de surf">
+                <figure>
+                    <img src="https://www.everydaycalifornia.com/cdn/shop/articles/unnamed_499a8ed5-2f9b-483d-87ae-7fb97f78774c.jpg?v=1664907847&width=1200" alt="Una tabla de surf">
+                    <figcaption>Alquila la tabla perfecta para tu nivel</figcaption>
+                </figure>
                 <h3>Tablas de surf</h3>
-                <p>Alquila la tabla perfecta para tu nivel</p>
             </div>
             <div class="box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLyfNdwbN0xSvAxS_4bA6fh_8dxX7z61W3w&s" alt="Playa">
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLyfNdwbN0xSvAxS_4bA6fh_8dxX7z61W3w&s" alt="Una playa con olas para surfear">
+                    <figcaption>Elige las playas más increíbles para tu viaje</figcaption>
+                </figure>
                 <h3>Mejores playas</h3>
-                <p>Elige las playas más increíbles para tu viaje</p>
             </div>
             <div class="box">
-                <img src="https://www.caminosurf.com/wp-content/uploads/2017/02/contact_sliderpic-1170x500.jpg" alt="Surf camp">
+                <figure>
+                    <img src="https://www.caminosurf.com/wp-content/uploads/2017/02/contact_sliderpic-1170x500.jpg" alt="Un grupo de personas en un surf camp">
+                    <figcaption>Únete a nuestros surf camps y mejora tus habilidades</figcaption>
+                </figure>
                 <h3>Surf Camps</h3>
-                <p>Únete a nuestros surf camps y mejora tus habilidades</p>
             </div>
         </div>
     </section>
